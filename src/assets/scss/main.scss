@@ -1,0 +1,92 @@
+.wrap{
+	border-top: 3px solid #222;
+}
+.posts-head{
+    h2{
+      a.postLink{
+          position: relative;
+          &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                -o-transform: scaleX(0);
+                transform: scaleX(0);
+                transition-duration: 0.2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+          }
+          &:hover{
+              color:#555;
+          }
+          &:hover:before{
+              visibility:visible;
+              transform:scaleX(1);
+          }
+      }
+    }
+}
+.posts-footer-wrap{
+   	margin-top:100px;
+   	margin-bottom: 20px;
+   	text-align:center;
+   	color:#999;
+   	.love{
+   		margin:0 5px;
+   	}
+   	.blog-first-statement{
+   		margin-right: 10px;
+   		&:after{
+   			    content: "|";
+   				 padding-left: 10px;
+   		}
+   	}
+  }
+.back-to-top{
+	box-sizing: border-box;
+    position: fixed;
+    bottom: -100px;
+    right: 30px;
+    z-index: 1050;
+    padding: 0 6px;
+    width: initial;
+    background: #222;
+    font-size: 12px;
+    opacity: 0.6;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transition-property: bottom;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.back-to-top-on{
+	bottom:30px;
+}
+
+.postsAnimation-enter{
+    opacity: 0;
+    transform:translateY(-2%);
+}
+.postsAnimation-enter-to{
+   opacity: 1;
+   transform:translateY(0);
+}
+.postsAnimation-leave{
+    opacity: 1;
+}
+.postsAnimation-leave-to{
+    opacity: 0;
+}
+.postsAnimation-enter-active,.postsAnimation-leave-active {
+    transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,53 @@
+.posts-content-wrap{
+	padding:40px;
+	margin-left:20px;
+	background:#fff;
+	.posts-list-wrap{
+		padding-top:40px;
+	}
+	header.posts-head{
+		h2{
+			font-size: 26px;
+		    text-align: center;
+		    word-break: break-word;
+		    font-weight: 400;
+		}
+		.posts-meta{
+			    margin: 3px 0 60px 0;
+			    color: #999;
+			    font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+			    font-size: 12px;
+			    text-align: center;
+			    .posts-meta-divider{
+			    	margin : 0 0.5em;
+			    }
+			    .posts-meta-item-icon{
+			    	margin-right:0.2em;
+			    }
+		}
+	}
+	.posts-body{
+		.posts-body-btnWrap{
+			margin-top: 50px;
+			text-align: center;
+			a.btn{
+					color:$side-color;
+					border:2px solid #555;
+					&:hover{
+						border-color: #222;
+					    color: #fff;
+					    background: #222;
+					}
+			}
+		}
+	}
+	.posts-footer-wrap{
+		.post-eof{
+			margin:80px auto;
+			width: 8%;
+			height: 1px;
+			background: #ccc;
+    		text-align: center;
+		}
+	}
+}

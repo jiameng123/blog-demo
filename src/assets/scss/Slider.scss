@@ -1,0 +1,99 @@
+.site-meta{
+	display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Rosario', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background: #222;
+    .site-subtitle{
+    	    font-size: 13px;
+   			color: #ddd;
+   			margin-top: 10px;
+    }
+}
+.menu-wrap{
+	margin-top: 20px;
+	margin-bottom:34px;
+	background:#fff;
+   a.isActive:after{
+   		@include point(6px,6px);
+   }
+    li{
+    		i{
+    			margin-right: 10px
+    		}
+    	    a{
+    	    	position: relative;
+    	    	width: 100%;
+			    box-sizing: border-box;
+			    text-align: left;
+			    padding: 5px 20px;
+			    line-height: inherit;
+			    transition-property: background-color;
+			    transition-duration: 0.2s;
+			    transition-timing-function: ease-in-out;
+			    transition-delay: 0;
+			    font-size: 13px;
+			  	display: inline-block;
+    	    }
+    }
+}
+//作者
+.side-bar{
+	position:static;
+	background:#f5f7f9;
+	.siderbar-inner{
+		    box-sizing: border-box;
+		    color: #555;
+		    background: #fff;
+		    position: relative;
+		    padding: 20px 10px;
+		    color: #999;
+		    text-align: center;
+		    img{
+		    	max-width: 120px;
+		    	max-height: 120px;
+		    }
+		    .site-author-name{
+		    	    color: #222;
+    				font-weight: 600;
+		    }
+		    .side-nav-wrap{
+		    	margin-top: 20px;
+		    	.side-nav-count{
+		    		@include navBlock
+		    	}
+			    .side-nav-name{
+					@include navText
+			     }
+		    }
+		    .side-rss{
+		    	margin-top: 20px;
+		    	border-top:1px dotted #ccc;
+		    	border-bottom:1px dotted #ccc;
+		    	a{
+		    		color:#fc6423;
+		    		display:block;
+		    	}
+		    }
+		    .side-link-author{
+		    	margin-top: 20px;
+		    	text-align: left;
+		    	div{
+		    		margin:5px 0 0;
+		    		a{
+		    			padding: 0 5px;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						font-size: 13px;
+		    		}
+		    	}
+		    }
+	}
+}

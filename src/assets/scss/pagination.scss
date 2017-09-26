@@ -1,0 +1,29 @@
+.page-wrap{
+	@include clearfix;
+	li{
+		@extend %pull-left;
+		a{
+			display: inline-block;
+			top: -1px;
+			margin: 0 10px;
+			padding: 0 10px;
+			line-height: 30px;
+			position: relative;
+    		top: -1px;
+    		@include borderTop;
+			&:hover{
+					color: #222;
+    				border-top-color: #222;
+			}
+		}
+		.is-current{
+			    color: #fff;
+			    background: #ccc;
+			    cursor: auto;
+				&:hover{
+					border-top-color: #ccc;
+					color:#fff;
+				}
+		}
+	}
+}
