@@ -1,5 +1,5 @@
 # blog-demo
-本项目是采用vue-cli脚手架搭建项目仿hexo经典主题next，用vue+vuex+node.js+mysql搭建个人博客前台展示界面。
+仿hexo经典主题next，用vue+vuex+node.js+mysql搭建个人博客前台展示界面。
 ## 技术栈
 [vue] <br> 
 [vuex]<br> 
